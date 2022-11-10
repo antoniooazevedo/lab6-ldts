@@ -8,6 +8,10 @@ public class StringDrink {
         text = str;
     }
 
+    StringDrink(StringDrink another){
+        this.text = another.text;
+    }
+
     public String getText(){
         return text;
     }
