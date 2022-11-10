@@ -21,12 +21,12 @@ public class HumanClient implements Client{
     @Override
     public void happyHourStarted(Bar bar) {
         _isHappyHour = true;
-        _strategy.happyHourStarted(_bar);
+        _strategy.happyHourStarted((StringBar) bar);
     }
 
     @Override
     public void happyHourEnded(Bar bar) {
         _isHappyHour = false;
-        _strategy.happyHourEnded(_bar);
+        _strategy.happyHourEnded((StringBar) bar);
     }
 }
